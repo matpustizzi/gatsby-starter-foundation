@@ -103,7 +103,7 @@ const Post = ({ data, pageContext }) => {
         <form 
           className="contact" 
           action="/thanks" 
-          name="{frontmatter.slug}" 
+          name={frontmatter.slug} 
           method="POST" 
           data-netlify="true" 
           data-netlify-honeypot="bot-field">
