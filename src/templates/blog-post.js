@@ -2,7 +2,7 @@
 import { jsx } from 'theme-ui'
 import { Link, graphql } from "gatsby"
 import Img from "gatsby-image"
-import { RiArrowRightLine, RiArrowLeftLine } from "react-icons/ri"
+import { RiArrowRightLine, RiArrowLeftLine, RiSendPlane2Line } from "react-icons/ri"
 
 import Layout from "../components/layout"
 import SEO from '../components/seo';
