@@ -110,6 +110,7 @@ const Post = ({ data, pageContext }) => {
           data-netlify-honeypot="bot-field">
           <input type="hidden" name="bot-field" />
           <input type="hidden" name="form-name" value="cleanup-registration" />
+          <input type="hidden" name="event" value={ frontmatter.title  + '' + frontmatter.date }/>
           <p>
             <label>First Name<input type="text" name="first-name" required /></label>   
           </p>
