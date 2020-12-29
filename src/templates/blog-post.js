@@ -3,6 +3,7 @@ import { jsx } from 'theme-ui'
 import { Link, graphql } from "gatsby"
 import Img from "gatsby-image"
 import { RiArrowRightLine, RiArrowLeftLine, RiSendPlane2Line } from "react-icons/ri"
+import {RiSendPlane2Line} from "react-icons/ri";
 
 import Layout from "../components/layout"
 import SEO from '../components/seo';
@@ -103,12 +104,12 @@ const Post = ({ data, pageContext }) => {
         <form 
           className="contact" 
           action="/thanks" 
-          name={frontmatter.slug} 
+          name="cleanup-registration" 
           method="POST" 
           data-netlify="true" 
           data-netlify-honeypot="bot-field">
           <input type="hidden" name="bot-field" />
-          <input type="hidden" name="form-name" value="{frontmatter.slug}" />
+          <input type="hidden" name="form-name" value="cleanup-registration" />
           <p>
             <label>First Name<input type="text" name="first-name" required /></label>   
           </p>
