@@ -99,6 +99,39 @@ const Post = ({ data, pageContext }) => {
           className="blog-post-content"
           dangerouslySetInnerHTML={{ __html: html }}
         />
+        <h2>Sign up</h2>
+        <form 
+          className="contact" 
+          action="/thanks" 
+          name="{frontmatter.slug}" 
+          method="POST" 
+          data-netlify="true" 
+          data-netlify-honeypot="bot-field">
+          <input type="hidden" name="bot-field" />
+          <input type="hidden" name="form-name" value="{frontmatter.slug}" />
+          <p>
+            <label>First Name<input type="text" name="first-name" required /></label>   
+          </p>
+          <p>
+            <label>Last Name<input type="text" name="last-name" required /></label>   
+          </p>
+          <p>
+            <label>Email<input type="email" name="email" required /></label>
+          </p>
+          <p>
+            <label>Subject<input type="text" name="subject" required /></label>   
+          </p>
+          <p>
+            <label>Message<textarea name="message" required ></textarea></label>
+          </p>
+          <p className="text-align-right">
+            <button className="button"            
+            sx={{
+              variant: 'links.button'
+            }} type="submit">Send Message <span className="icon -right"><RiSendPlane2Line/></span></button>
+          </p>
+        </form>
+
       </article>
       {(previous || next) && (
         <Pagination {...props} />
