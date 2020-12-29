@@ -54,9 +54,9 @@ const Contact = ({data}) => {
           </p>
           <fieldset>      
               <legend>What neighborhoods are you interested in?</legend>      
-              <input type="checkbox" name="neighborhood" value="The Heights">Cats<br>      
-              <input type="checkbox" name="neighborhood" value="Bergen Lafayette">Dogs<br>      
-              <input type="checkbox" name="neighborhood" value="McGinley Square">Birds<br>      
+              <input type="checkbox" name="neighborhood" value="The Heights"/>Cats<br/>      
+              <input type="checkbox" name="neighborhood" value="Bergen Lafayette"/>Dogs<br/>      
+              <input type="checkbox" name="neighborhood" value="McGinley Square"/>Birds<br/>      
           </fieldset>  
           <p>
             <label>Message<textarea name="message" required ></textarea></label>
